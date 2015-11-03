@@ -14,7 +14,7 @@ else
 endif
 
 CFLAGS += $(COMMON_FLAGS)
-CXXFLAGS += $(COMMON_FLAGS) -std=c++11
+CXXFLAGS += $(COMMON_FLAGS) -std=c++0x
 
 SRCDIR = src
 
