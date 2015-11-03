@@ -2,8 +2,8 @@ OS := $(shell uname)
 
 CPPFLAGS = -I./brotli/dec/ -I./brotli/enc/ -I./src
 
-CC ?= gcc-4.8
-CXX ?= g++-4.8
+CC ?= gcc-4.7
+CXX ?= g++-4.7
 
 COMMON_FLAGS = -fno-omit-frame-pointer -no-canonical-prefixes -DFONT_COMPRESSION_BIN
 
@@ -14,7 +14,7 @@ else
 endif
 
 CFLAGS += $(COMMON_FLAGS)
-CXXFLAGS += $(COMMON_FLAGS) -std=c++0x
+CXXFLAGS += $(COMMON_FLAGS) -std=c++11
 
 SRCDIR = src
 
